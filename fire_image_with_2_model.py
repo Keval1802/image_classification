@@ -20,8 +20,8 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 # Dataset paths
-data_path = r'C:\Users\Keval\Downloads\archive\Forest_Fire\Training and Validation'
-test_path = r'C:\Users\Keval\Downloads\archive\Forest_Fire\Testing'
+data_path = r'Training and Validation'
+test_path = r'Testing'
 
 # Step 1: Data Generators
 datagen = ImageDataGenerator(rescale=1./255, validation_split=0.2)
@@ -129,7 +129,7 @@ plt.show()
 print("\nRandomForest Classification Report:\n", classification_report(y_test, y_pred, target_names=class_names))
 
 # Step 6: Save CNN Model
-model.save("fire_nofire_model.h5")
+model.save('models/fire_nofire_model.h5')
 joblib.dump(model, "fire_nofire_rf_model.pkl")
 
 # Step 7: GUI for CNN Prediction
@@ -166,3 +166,4 @@ result_label = tk.Label(root, text="", font=("Arial", 14), bg="white")
 result_label.pack(pady=10)
 
 root.mainloop()
+
