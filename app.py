@@ -15,8 +15,8 @@ st.set_page_config(
 # Load Models (Cached)
 @st.cache_resource
 def load_models():
-    cnn_model = load_model("models/fire_nofire_model.h5")
-    rf_model = joblib.load("models/fire_nofire_rf_model.pkl")
+    cnn_model = load_model("fire_nofire_model.h5")
+    rf_model = joblib.load("fire_nofire_rf_model.pkl")
     return cnn_model, rf_model
 
 cnn_model, rf_model = load_models()
