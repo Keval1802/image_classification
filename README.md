@@ -42,9 +42,3 @@ The model can be used for **early fire detection**, **surveillance systems**, an
 * CCTV and surveillance monitoring
 * Industrial safety systems
 * Smart city applications
-
----
-
-## License
-
-This project is for **educational purposes**.
