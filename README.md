@@ -24,7 +24,6 @@ The model can be used for **early fire detection**, **surveillance systems**, an
 * TensorFlow / Keras
 * NumPy
 * Matplotlib
-* OpenCV (optional)
 
 ---
 
